@@ -1,0 +1,122 @@
+.fbform img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#selectbox
+{
+    float: right;
+}
+.fbtn
+{
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 0;
+    box-shadow: none !important;
+    border: none;
+    display: inline-flex;
+    height: 40px;
+    width: 100%;
+}
+.fok 
+{
+    width: 20px;
+    border: 1px solid #000;
+    padding: 5px 20px 5px 20px;
+    float: right;
+    margin: -15px 8px 0 0;
+    cursor: pointer;
+}
+.fok:hover
+{
+color: maroon;
+background-color: #DA99FA;
+border: 1px solid #fff;
+}
+.login-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1099;
+	background-color:rgba(0,0,0,0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease;
+}
+.login-popup.show{
+	visibility:visible;
+	opacity: 1;
+}
+.login-popup .box{
+	background-color:#ffffff;
+	width: 700px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	display: flex;
+	flex-wrap: wrap;
+	opacity: 0;
+	margin-left: 50px;
+	transition: all 1s ease;
+
+}
+.login-popup.show .box{
+	opacity: 1;
+	margin-left: 0;
+}
+
+
+@keyframes zoomInOut{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+.login-popup .box .fbform{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding:40px 30px;
+}
+
+
+.login-popup .box .fbform .form-control{
+	height: 45px;
+	margin-bottom: 30px;
+	width: 100%;
+	border:none;
+	border-bottom:1px solid #cccccc;
+	font-size: 15px;
+	color:#000000;
+}
+.login-popup .box .fbform .form-control:focus{
+	outline: none;
+}
+
+.login-popup .box .fbform .btn:focus{
+	outline: none;
+}
+
+.login-popup .box .fbform .close{
+	position: absolute;
+	right: 10px;
+	top:0px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+	.login-popup .box{
+		width: calc(100% - 30px);
+	}
+	
+	.login-popup .box .fbform{
+		flex: 0 0 100%;
+        max-width: 100%;
+	}
+}

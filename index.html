@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Job Search </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" height="60" width="150" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Find Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Create Your Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resources</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="sign_btn" href="#" >Sign In</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Employers</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    
+</section>
+
+<div class="search-job text-center">
+  <div class="banner">
+    <h4>Jobs and Vacancies</h4>
+  </div>
+  <i class="fa fa-search"></i> <input type="text "  class="form-control"  placeholder="company">
+  <i class="fa fa-location-arrow"></i> <input type="text" class="form-control" placeholder="location">
+    <input type="button" class="btn btn-primary" value="Find Jobs">
+</div>
+<br>
+<div class="filter text-left" style="float: left;">
+<form>
+  <div><h8><b>Date Posted &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="min1" class="btn" type="button">-</button>&nbsp;&nbsp;<button id="max1" class="btn" type="button">+</button></b></h8></div>
+  <div id="content1">
+  <input type="radio" name="grp1" value="24 hours">24 hours </input><br>
+  <input type="radio" name="grp1" value="2 days">2 days </input><br>
+  <input type="radio" name="grp1" value="7 days">7 days </input><br>
+  <input type="radio" name="grp1" value="30 days">30 days </input><br>
+</div>
+<br>
+
+<div><h8><b>Job Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="min2" class="btn" type="button">-</button>&nbsp;&nbsp;<button id="max2" class="btn" type="button">+</button></b></h8></div>
+<div id="content2">
+  <input type="checkbox"  checked>All </input><br>
+  <input type="checkbox"  value="Full Time">Full Time </input><br>
+  <input type="checkbox"  value="Part Time">Part Time</input><br>
+  </div>
+   <br>
+
+   <div><h8><b>Categories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="min3" class="btn" type="button">-</button>&nbsp;&nbsp;<button id="max3" class="btn" type="button">+</button></b></h8></div>
+   <div id="content3">
+  <input type="checkbox"  value="Information Technology">Information Technology </input><br>
+  <input type="checkbox"  value="Engineer">Engineer </input><br>
+  <input type="checkbox"  value="Professional Service">Professional Service</input><br>
+  </div>
+  <br>
+
+  <div><h8><b>State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="min4" class="btn" type="button">-</button>&nbsp;&nbsp;<button id="max4" class="btn" type="button">+</button></b></h8></div>
+  <div id="content4">
+  <input type="checkbox"  value="Madhya Pradesh">Madhya Pradesh</input><br>
+  <input type="checkbox"  value="Delhi">Delhi</input><br>
+  <input type="checkbox"  value="Chennai">Chennai</input><br>
+  </div>
+
+</form>
+</div>
+<button type="button" class="btn-second"><i class="fa fa-envelope"></i>&nbsp Email me Jobs like These</button>
+<br>
+<p><b>Sort By : <sub style="color:dodgerblue;">Relevance : Date</sub></b></p>
+<section id="jobs">
+  <div class="container">
+    <div class="company-details">
+      <div class="job-update">
+
+        <h4 style="color: dodgerblue;"><b>Sr.Software Developer</b></h4>
+        <p>XYZ pvt. limited company</p>
+
+        <i class="fa fa-briefcase"></i><span> 0-1 year</span><br>
+        <i class="fa fa-inr"></i><span> 3.50 - 4.00 Lacs p.a</span><br>
+        <i class="fa fa-map-marker"></i><span> Banglore</span><br>
+        <p>Skills <i class="fa fa-angle-double-right"></i><small> Java, </small><small> Python, </small><small> Html, Css, </small><small> .NET </small><br></p>
+        <p>Description <i class="fa fa-angle-double-right"></i>Required Technical and Professional ExpertisePreferred Technical and Professional Exper...<a href="#">Read more</a></p>
+      </div>
+      <div class="apply-btn">
+        <button type="button" class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br><br><br><br>
+<div class="cookies">
+  <h1 class="cook">We are using cookies for increasing your web experiance on our site<br>please give authorization there cookies and remove this permanently.</h1>
+  <a href="#">Our Cookies Policy</a>
+  <div class="ok">ok</div>
+</div>
+
+<link rel="stylesheet" href="pstyle.css" type="text/css">
+<div class="login-popup">
+  <div class="box">
+     <div class="fbform">
+       <div class="close">&times;</div>
+             <img class="lo" src="images/logo.png" height="100" width="150" >
+             <select id="selectbox">
+                 <option value="English">English</option>
+                 <option value="Hindi">Hindi</option>
+             </select>
+             <br>
+       <form>
+                 <h6>What type of feedback you like to leave for us ? </h6>
+                 <button class="fbtn" type="button">Suggestions or general feedback</button><br>
+                 <button class="fbtn" type="button">Bug or Site problem</button><br>
+                 <button class="fbtn" type="button">Question</button><br><br><br><br>
+                 <div class="fok">>></div>
+       </form>
+     </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+  $(document).ready(function(){
+     // $("button").click(fn1);
+  
+     $(function(){
+       $('#min1').click(function(){
+         $('#content1').slideUp();
+       });
+       $('#max1').click(function(){
+         $('#content1').slideDown();
+       });
+     });
+    
+     $(function(){
+       $('#min2').click(function(){
+         $('#content2').slideUp();
+       });
+       $('#max2').click(function(){
+         $('#content2').slideDown();
+       });
+     });
+
+     $(function(){
+       $('#min3').click(function(){
+         $('#content3').slideUp();
+       });
+       $('#max3').click(function(){
+         $('#content3').slideDown();
+       });
+     });
+
+     $(function(){
+       $('#min4').click(function(){
+         $('#content4').slideUp();
+       });
+       $('#max4').click(function(){
+         $('#content4').slideDown();
+       });
+     });
+
+    });
+</script>
+</html>
